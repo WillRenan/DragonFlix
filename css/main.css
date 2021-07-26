@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
 :root {
   --vermelho: #e50914;
   --preto: #141414;
@@ -9,19 +9,28 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*Elementos base*/
 body {
   background-color: var(--preto);
   font-family: "Times New Roman";
+  color: white;
 }
 header {
   padding: 15px 60px;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  background-image: linear-gradient(var(--preto), transparent);
 }
 
 header .container {
+  background: transparent;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 header nav a {
   text-decoration: none;
@@ -40,8 +49,11 @@ header nav a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .menu-right {
+  display: flex;
+  align-items: center;
 }
 .menu-right a img {
   border-radius: 4px;
@@ -50,4 +62,89 @@ header nav a:hover {
   color: var(--vermelho);
   font-family: "Arial Black", Times;
   font-size: 30px;
+}
+/*Filme principal*/
+
+main .main-movie {
+  height: 790px;
+  padding-left: 60px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) 100%),
+    url("/img/asBranquelas.jpg");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-family: "Open Sans", sans-serif;
+}
+.main-container {
+  /* background: #aaa; */
+  margin-top: 50px;
+  width: 40%;
+}
+
+.main-title {
+  font-weight: 800;
+  font-size: 60px;
+}
+.main-description {
+  font-size: 21.5px;
+}
+/*Estilos botões*/
+.main-buttons {
+  margin-top: 20px;
+}
+.main-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.main-buttons .btn:last-child {
+  background: rgba(124, 124, 124, 0.8);
+  color: white;
+  transition: 0.3s;
+}
+/*Efeitos botões principais*/
+.main-buttons .btn:last-child:hover {
+  background: rgba(109, 109, 109, 0.5);
+  color: white;
+}
+.main-buttons .btn:first-child:hover {
+  transition: 0.3s;
+}
+.main-buttons .btn:first-child:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+/*-------------------------------------------*/
+.btn {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+  padding: 10px 27px;
+  font-size: 18px;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 6px;
+}
+
+#btn-info {
+  font-size: 30px;
+}
+#btn-play {
+  font-size: 30px;
+}
+/*-------------------------------------------*/
+
+.menu-input {
+  padding: 4px 27px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
 }
