@@ -1,11 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+  --navColor: #e5e5e5;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: #1e1e1e;
+  background-color: var(--preto);
+  font-family: "Times New Roman";
 }
-.container h2 {
-  color: red;
+header {
+  padding: 15px 60px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: none;
+  color: var(--navColor);
+  margin-left: 17px;
+  transition: 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+header nav a:hover {
+  color: #aaa;
+}
+.menu-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu-right {
+}
+.menu-right a img {
+  border-radius: 4px;
+}
+.logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  font-size: 30px;
 }
