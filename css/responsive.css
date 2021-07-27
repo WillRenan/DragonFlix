@@ -1,0 +1,39 @@
+@media screen and (max-width: 700px) {
+  header {
+    position: relative;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+  header .container .menu-left {
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main .main-movie .main-container {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  main .main-title {
+    font-weight: 800;
+    font-size: 30px;
+  }
+  .main-description {
+    font-size: 16px;
+  }
+
+  main .main-movie {
+    padding-left: 10px;
+  }
+
+  main .main-container .main-buttons .btn {
+    width: 50%;
+    height: 50px;
+  }
+}
