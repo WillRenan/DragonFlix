@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
 :root {
-  --vermelho: #e50914;
+  --amarelo: #fbc74d;
   --preto: #141414;
   --navColor: #e5e5e5;
 }
@@ -42,7 +42,7 @@ header nav a {
   font-weight: 400;
 }
 header nav a:hover {
-  color: #aaa;
+  color: var(--amarelo);
 }
 .menu-left {
   display: flex;
@@ -59,7 +59,7 @@ header nav a:hover {
   border-radius: 4px;
 }
 .logo {
-  color: var(--vermelho);
+  color: var(--amarelo);
   font-family: "Arial Black", Times;
   font-size: 30px;
 }
@@ -69,8 +69,8 @@ main .main-movie {
   height: 650px;
   padding-left: 60px;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) 100%),
-    url("/img/asBranquelas.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) 100%),
+    url("/img/dragon-ball-super.jpg");
   background-size: cover;
 
   display: flex;
@@ -89,10 +89,12 @@ main .main-movie {
 .main-title {
   font-weight: 800;
   font-size: 60px;
+  line-height: 1;
 }
 .main-description {
   font-size: 21.5px;
 }
+/*-------------------------------------------*/
 /*Estilos botões*/
 .main-buttons {
   margin-top: 20px;
@@ -120,7 +122,7 @@ main .main-movie {
 .main-buttons .btn:first-child:hover {
   background: rgba(255, 255, 255, 0.5);
 }
-/*-------------------------------------------*/
+
 .btn {
   display: flex;
   align-items: center;
@@ -132,6 +134,8 @@ main .main-movie {
 
   border: none;
   border-radius: 6px;
+
+  cursor: pointer;
 }
 
 #btn-info {
@@ -155,4 +159,46 @@ main .main-movie {
   height: 100%;
   width: 100%;
   display: block;
+}
+
+/*Carrossel*/
+.carousel-movie {
+  margin-left: 60px;
+  font-family: "Open Sanas", sans-serif;
+  font-weight: 700;
+}
+.carousel-movie > p {
+  margin: 20px 0;
+}
+.carousel-movie .owl-carousel .item {
+  height: 130px;
+  transition: 0.4s;
+
+  cursor: pointer;
+}
+.carousel-movie .owl-carousel .item:hover {
+  opacity: 0.8;
+}
+.carousel-movie .owl-carousel .item .box-movie {
+  border-radius: 4px;
+}
+/*-------------------------------------------*/
+/*Header animation*/
+.scrollOne {
+  background: var(--preto);
+  transition-duration: 0.8s;
+}
+
+.scrollZero {
+  background-image: linear-gradient(var(--preto), transparent);
+  transition-duration: 0.8s;
+}
+/*-------------------------------------------*/
+/* Footer */
+footer {
+  height: 200px;
+}
+
+#git {
+  width: 20px;
 }
