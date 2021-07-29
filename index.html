@@ -7,6 +7,7 @@
     
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/popup.css">
     <!--Material Icon Google e Font Awesome-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9525ce30e6.js" defer crossorigin="anonymous"></script>
@@ -17,7 +18,6 @@
     <!--OWL JQUERY-->
     <script src="/js/owl/jquery.min.js" defer ></script>
     <script src="/js/owl/owl.carousel.min.js" defer ></script>
-    
     <title>DRAGONFLIX</title>
   </head>
   <body>
@@ -46,6 +46,19 @@
         
       </div><!--Header Container-->
     </header>
+    <!--Popup-->
+    <section>
+      <div class="popup" id="popup-1">
+        <div class="overlay" ></div><!--Popup-overlay-->
+          <div class="content">
+            <div class="btn-close" onclick=togglePopup() >&times; </div>
+            <h2>TITULO</h2>
+            <P>Lorem10Lorem10Lorem10Lorem10Lorem10Lorem10</P>
+          </div><!--Popup-content-->
+        
+      </div><!--Popup-->
+      
+    </section>
     
     <main>
       <div class="main-movie">
@@ -58,12 +71,11 @@
             com sua máquina do tempo para que ele possa treinar com Goku e Vegeta.
           </p>
           <div class="main-buttons">
-            <button role="button" class="btn">
+            <button class="btn" role="button" >
               <i class="fas fa-play" id="btn-play"></i>
               Assistir
             </button>
-            <button role="button" class="btn">
-             
+            <button class="btn" onclick=togglePopup()  role="button" >
               <span class="material-icons" id="btn-info">
                 info
               </span>
@@ -143,9 +155,15 @@
     <footer>
       <div class="container">
         <div class="menu-footer">
-          <a href=""><i id="gitHub" class="fab fa-github-square"></i></a>
-        <a href=""><i id="linkedIn" class="fab fa-linkedin"></i></a>
-        <a href=""><i id="behance" class="fab fa-behance-square"></i></a>
+          <a href="https://github.com/WillRenan" target="blank">
+            <i id="gitHub" class="fab fa-github-square"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/willian-renan-rodrigues-gon%C3%A7alves-71b483160/" target="blank">
+            <i id="linkedIn" class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.behance.net/willianrodrigu" target="blank">
+            <i id="behance" class="fab fa-behance-square"></i>
+          </a>
         </div><!--Menu-footer-->
         
       </div><!--Footer-container-->
@@ -157,5 +175,6 @@
      <!--JS-->
     <script src="/js/main.js" ></script>
     <script src="/js/menu.js"></script>
+    <script src="/js/popup.js"></script>
   </body>
 </html>

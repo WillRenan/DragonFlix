@@ -191,14 +191,31 @@ main .main-movie {
 
 .scrollZero {
   background-image: linear-gradient(var(--preto), transparent);
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
 }
 /*-------------------------------------------*/
 /* Footer */
-footer {
+footer .container {
+  margin-left: 60px;
   height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .fab {
+  color: var(--amarelo);
+  font-size: 30px;
 }
 
-#git {
-  width: 20px;
+footer .fab:hover {
+  color: orange;
+}
+
+footer .menu-footer {
+  display: flex;
+  gap: 8px;
+}
+
+.owl-dot {
+  display: none;
 }
