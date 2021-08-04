@@ -1,4 +1,5 @@
-<h2 align="center">Projeto de Clone da Netflix  com <br> toque pessoal</h2>
+
+<h2 align="center"> :movie_camera: :computer: Projeto de Clone da Netflix  com <br> toque pessoal</h2>
 
 ___
 
@@ -27,8 +28,8 @@ ___
 <h3 align="center">
   <a href="https://dragon-flix-iif62f31f-willrenan.vercel.app/">Projeto Oline</a>&nbsp;|&nbsp;
   <a href="#information_source-sobre">Sobre</a>&nbsp;|&nbsp;
-  <a href="#interrobang-motivo">Motivo</a>&nbsp;|&nbsp;
-  <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;|&nbsp;
+  <a href="#point_up-motivo">Motivo</a>&nbsp;|&nbsp;
+  <a href="#computer-requisitos-mínimos">Requisitos</a>&nbsp;|&nbsp;
   <a href="#rocket-tecnologias-utilizadas">Tecnologias</a>&nbsp;|&nbsp;
   <a href="#licença">Licença</a>
 </h3>
@@ -49,11 +50,11 @@ ___
 
 Esse projeto foi desenvolvido na primeira parte prática do Bootcamp MRV Front End SPA Developer na  [Digital Inovation One](https://github.com/digitalInnovationone). 
 
-## :computer: Motivo
+## :point_up: Motivo
 
 O motivo pelo qual o projeto foi desenvolvido, é o de aplicação dos conhecimentos vistos durante o bootcamp até o momento.
 
-## :seedling: Requisitos Mínimos
+## :computer: Requisitos Mínimos
 
 Para executar o projeto em seu computador é necessário ter um editor de código e um navegador.
 
