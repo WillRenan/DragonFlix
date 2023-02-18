@@ -79,7 +79,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.c
 </h4>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/willian-renan-rodrigues-gon%C3%A7alves-71b483160/">
+  <a href="https://www.https://www.linkedin.com/in/willianrenanrodrigues/">
     <img alt="Willian Renan Rodrigues" src="https://img.shields.io/badge/LinkedIn-jerp-0e76a8?style=flat&logoColor=white&logo=linkedin">
   </a>
   <a href="https://www.facebook.com/willian.rodrigues.792303/">
